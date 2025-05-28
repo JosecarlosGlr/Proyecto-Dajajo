@@ -25,4 +25,17 @@ document.getElementById("reservaForm").addEventListener("submit", function(e) {
         mensaje.textContent = "Número de tarjeta inválido (debe contener 16 dígitos).";
         return;
         }
+    // Validar fecha de caducidad
+    const hoy = new Date();
+    const [añoCad, mesCad] = fechaCaducidad.split("-");
+    const fechaTarjeta = new Date(añoCad, mesCad);
+    
+    if (fechaTarjeta <= hoy) {
+        mensaje.textContent = "La tarjeta está caducada.";
+        return;
+        }
+    
+    mensaje.style.color = "lightgreen";
+    mensaje.textContent = "Compra realizada con éxito. ¡Gracias!";
+    this.reset();
     });
