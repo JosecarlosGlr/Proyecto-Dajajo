@@ -6,6 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Discoteca Dajajo</h1>
+
+        <form id="reservaForm">
+            <h2>Reserva tu entrada</h2>
+            
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Apellidos:</label>
+            <input type="text" id="apellidos" required>
+
+            <label>Edad:</label>
+            <input type="number" id="edad" min="0" required>
+
+            <label>DNI:</label>
+            <input type="text" id="dni" required>
+
+            <label>Número de entradas:</label>
+            <input type="number" id="entradas" min="1" required>
+
+            <h2>Datos de la tarjeta</h2>
+
+            <label>Número de tarjeta:</label>
+            <input type="text" id="numeroTarjeta" maxlength="16" required>
+
+            <label>Fecha de caducidad:</label>
+            <input type="month" id="fechaCaducidad" required>
+
+            <button type="submit">Comprar</button>
+        </form>
+        
+        <p id="mensaje"></p>
+
+        <script src="discoteca.js"></script>
+    </div>
 </body>
 </html>
