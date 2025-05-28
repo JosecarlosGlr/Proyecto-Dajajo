@@ -15,7 +15,7 @@ document.getElementById("reservaForm").addEventListener("submit", function(e) {
         mensaje.textContent = "Por favor, completa todos los campos.";
         return;
     }
-
+    // Validar fecha nacimiento
     if (edad < 18) {
         mensaje.textContent = "Debes ser mayor de 18 años para comprar entradas.";
         return;
