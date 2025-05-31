@@ -4,31 +4,76 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    }
-    
-    .container {
+}
+
+.container {
     max-width: 500px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #222;
     border-radius: 10px;
-    }
-    
-    h1, h2 {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.01);
+}
+
+h1, h2 {
     text-align: center;
-    }
-    
-    form label {
+    margin-bottom: 20px;
+    color: #1db954;
+}
+
+form label {
     display: block;
-    margin-top: 10px;
-    }
-    input {
-        width: 100%;
-        padding: 8px;
-        margin-top: 4px;
-        box-sizing: border-box;
-        border: none;
-        border-radius: 5px;
-        }
-        
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ccc;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #444;
+    border-radius: 5px;
+    transition: border 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #1db954;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #1db954;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #17a44f;
+    transform: scale(1.02);
+}
+
+#mensaje {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1db954;
+    font-size: 16px;
+}
        
