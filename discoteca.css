@@ -22,4 +22,13 @@ body {
     display: block;
     margin-top: 10px;
     }
-    
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        }
+        
+       
